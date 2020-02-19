@@ -1621,7 +1621,7 @@ public:
         if (vars.empty()) {
             return false;
         }
-        
+        init_variable_values();
         TRACE("arith", 
               for (theory_var v = 0; v < sz; ++v) {
                   if (th.is_relevant_and_shared(get_enode(v))) { 
