@@ -1628,7 +1628,7 @@ public:
                   }
               }
               tout << "\n"; );
-        if (!m_use_nra_model) {
+        if (!m_use_nra_model && !m_nla) {
             lp().random_update(vars.size(), vars.c_ptr());
         }
         m_model_eqs.reset();
